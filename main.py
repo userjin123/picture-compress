@@ -18,7 +18,7 @@ def select_path(entry):
         entry.insert("end", path)
 
 
-def pic_compress(pic_path, out_path, target_size=199, quality=90, step=5):
+def pic_compress(pic_path, out_path, target_size, quality=90, step=5):
     """图片压缩"""
     with open(pic_path, 'rb') as f:
         pic_byte = f.read()
